@@ -1,0 +1,85 @@
+@model Course
+
+@{
+    ViewData["Title"] = "Edit Course - " + Model.Name;
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <!-- Breadcrumb & Direct Action -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <a asp-controller="Courses" asp-action="AdminPanel" class="text-decoration-none text-muted small">
+                <i class="bi bi-arrow-left me-1"></i> Back to Admin Panel
+            </a>
+            <a asp-controller="Lessons" asp-action="Index" asp-route-Id="@Model.Id" class="btn btn-sm btn-outline-primary">
+                <i class="bi bi-collection-play me-1"></i> Manage Course Lessons
+            </a>
+        </div>
+
+        <div class="card shadow-sm border p-4 p-md-5">
+            <div class="d-flex align-items-center gap-2 mb-4">
+                <div class="feature-icon mb-0" style="width: 44px; height: 44px; font-size: 1.2rem;">
+                    <i class="bi bi-pencil"></i>
+                </div>
+                <div>
+                    <h3 class="fw-bold mb-0">Edit Course</h3>
+                    <p class="text-muted small mb-0">Update course details and branding.</p>
+                </div>
+            </div>
+
+            <form asp-controller="Courses" asp-action="Edit" method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Id" />
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Course Title</label>
+                    <input type="text" asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label">Description</label>
+                    <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="Description" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="Image" class="form-label">Update Thumbnail (Leave blank to keep current)</label>
+                    <input type="file" asp-for="Image" accept=".png,.jpg,.jpeg" id="imageFileInput" 
+                           class="form-control" onchange="addImage()" />
+                    <span asp-validation-for="Image" class="text-danger small"></span>
+
+                    <div class="mt-3">
+                        <label class="form-label text-muted small">Current / Preview Image</label>
+                        <div class="image-preview-container bg-light d-flex align-items-center justify-content-center">
+                            <img src="@(string.IsNullOrEmpty(Model.ImagePath) ? "/Images/No_Image.png" : Model.ImagePath)" 
+                                 id="courseImg" 
+                                 alt="@Model.Name" 
+                                 onerror="this.src='/Images/No_Image.png';" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 justify-content-end pt-3 border-top">
+                    <a asp-controller="Courses" asp-action="AdminPanel" class="btn btn-outline-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-primary px-4">
+                        <i class="bi bi-check2 me-1"></i> Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function addImage() {
+            var fileInput = document.getElementById("imageFileInput");
+            if (fileInput.files && fileInput.files[0]) {
+                document.getElementById("courseImg").src = window.URL.createObjectURL(fileInput.files[0]);
+            }
+        }
+    </script>
+}
+}

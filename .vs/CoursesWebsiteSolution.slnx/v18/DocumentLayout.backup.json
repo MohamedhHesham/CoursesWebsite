@@ -1,0 +1,329 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ITI\\CoursesWebsiteSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\migrations\\20260904233710_final.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\migrations\\20260904233710_final.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\views\\courses\\addcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\views\\courses\\addcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\views\\lessons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\views\\lessons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\controllers\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\controllers\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\views\\courses\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\views\\courses\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\models\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\models\\learningprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\models\\learningprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|d:\\iti\\courseswebsitesolution\\courseswebsite\\migrations\\20260904233627_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68150469-41FE-D23D-1E7D-06127BA55DE9}|CoursesWebsite\\CoursesWebsite.csproj|solutionrelative:courseswebsite\\migrations\\20260904233627_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 787,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20260904233710_final.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Migrations\\20260904233710_final.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Migrations\\20260904233710_final.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Migrations\\20260904233710_final.cs",
+              "RelativeToolTip": "CoursesWebsite\\Migrations\\20260904233710_final.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T23:37:10.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20260904233627_test.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Migrations\\20260904233627_test.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Migrations\\20260904233627_test.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Migrations\\20260904233627_test.cs",
+              "RelativeToolTip": "CoursesWebsite\\Migrations\\20260904233627_test.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAAYwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T23:36:28.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddCourse.cshtml",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Courses\\AddCourse.cshtml",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Views\\Courses\\AddCourse.cshtml",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Courses\\AddCourse.cshtml",
+              "RelativeToolTip": "CoursesWebsite\\Views\\Courses\\AddCourse.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACwAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T22:22:02.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Program.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Program.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Program.cs",
+              "RelativeToolTip": "CoursesWebsite\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T22:08:16.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CoursesWebsite\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAmwGAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T17:41:21.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Lessons\\Index.cshtml",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Views\\Lessons\\Index.cshtml",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Lessons\\Index.cshtml",
+              "RelativeToolTip": "CoursesWebsite\\Views\\Lessons\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T17:36:29.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LessonsController.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Controllers\\LessonsController.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Controllers\\LessonsController.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Controllers\\LessonsController.cs",
+              "RelativeToolTip": "CoursesWebsite\\Controllers\\LessonsController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowDwAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T15:06:07.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminPanel.cshtml",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Courses\\AdminPanel.cshtml",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Views\\Courses\\AdminPanel.cshtml",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Courses\\AdminPanel.cshtml",
+              "RelativeToolTip": "CoursesWebsite\\Views\\Courses\\AdminPanel.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T17:33:51.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Controllers\\CoursesController.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "CoursesWebsite\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowEUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T17:33:51.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Models\\User.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Models\\User.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Models\\User.cs",
+              "RelativeToolTip": "CoursesWebsite\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T17:30:07.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Controllers\\UserController.cs",
+              "RelativeToolTip": "CoursesWebsite\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T17:20:43.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Lesson.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Models\\Lesson.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Models\\Lesson.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Models\\Lesson.cs",
+              "RelativeToolTip": "CoursesWebsite\\Models\\Lesson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T17:30:07.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LearningProgress.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Models\\LearningProgress.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Models\\LearningProgress.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Models\\LearningProgress.cs",
+              "RelativeToolTip": "CoursesWebsite\\Models\\LearningProgress.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T17:30:06.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Models\\Enrollment.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Models\\Enrollment.cs",
+              "RelativeToolTip": "CoursesWebsite\\Models\\Enrollment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T17:30:05.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Models\\Course.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Models\\Course.cs",
+              "RelativeToolTip": "CoursesWebsite\\Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T17:30:05.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "CoursesWebsite\\Views\\User\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T17:20:36.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EnrollmentsController.cs",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Controllers\\EnrollmentsController.cs",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Controllers\\EnrollmentsController.cs",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Controllers\\EnrollmentsController.cs",
+              "RelativeToolTip": "CoursesWebsite\\Controllers\\EnrollmentsController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T17:15:57.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CoursesWebsite\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T17:13:57.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "CoursesWebsite\\Views\\Courses\\Index.cshtml",
+              "ToolTip": "D:\\ITI\\CoursesWebsiteSolution\\CoursesWebsite\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "CoursesWebsite\\Views\\Courses\\Index.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAWwDUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-04T17:13:00.625Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

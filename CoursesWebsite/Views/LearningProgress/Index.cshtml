@@ -1,0 +1,112 @@
+@using CoursesWebsite.Data
+@using Microsoft.EntityFrameworkCore
+
+@model List<Lesson>
+
+@{
+    ViewData["Title"] = "Course Curriculum & Progress";
+    
+    var userIdStr = Context.Session.GetString("UserId");
+    Guid? currentUserId = !string.IsNullOrEmpty(userIdStr) ? Guid.Parse(userIdStr) : null;
+    
+    int totalCount = Model?.Count ?? 0;
+    int completedCount = 0;
+    if (Model != null && currentUserId.HasValue)
+    {
+        completedCount = Model.Count(l => l.learningProgress != null && 
+                                          l.learningProgress.Any(lp => lp.userId == currentUserId.Value && lp.isCompleted));
+    }
+    int progressPercent = totalCount > 0 ? (int)Math.Round((double)completedCount / totalCount * 100) : 0;
+}
+
+<!-- Progress Dashboard Header -->
+<div class="card shadow-sm border p-4 p-md-5 mb-4 bg-white">
+    <div class="row align-items-center g-4">
+        <div class="col-md-7">
+            <span class="badge bg-primary-subtle text-primary px-3 py-1 rounded-pill fw-semibold mb-2">Learning Progress</span>
+            <h2 class="fw-bold mb-1">Course Curriculum</h2>
+            <p class="text-muted mb-0">Follow the syllabus step by step and track your milestones.</p>
+        </div>
+        <div class="col-md-5 text-md-end">
+            <div class="d-inline-block text-start w-100" style="max-width: 320px;">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="fw-semibold text-muted small">Completed</span>
+                    <span class="fw-bold text-primary">@completedCount of @totalCount Lessons (@progressPercent%)</span>
+                </div>
+                <div class="progress progress-modern">
+                    <div class="progress-bar" role="progressbar" style="width: @progressPercent%;" 
+                         aria-valuenow="@progressPercent" aria-valuemin="0" aria-valuem100="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Lessons List -->
+@if (Model != null && Model.Any())
+{
+    <div class="d-flex flex-column gap-3">
+        @foreach (var lesson in Model)
+        {
+            var isLessonCompleted = false;
+            if (currentUserId.HasValue && lesson.learningProgress != null)
+            {
+                var lp = lesson.learningProgress.FirstOrDefault(p => p.userId == currentUserId.Value);
+                if (lp != null && lp.isCompleted)
+                {
+                    isLessonCompleted = true;
+                }
+            }
+
+            <div class="card shadow-sm border card-hover p-3 p-md-4">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="d-flex align-items-center justify-content-center rounded-3 bg-light text-primary fw-bold" 
+                             style="width: 48px; height: 48px; min-width: 48px; font-size: 1.1rem;">
+                            @(lesson.LessonNumber.HasValue ? lesson.LessonNumber.ToString() : "#")
+                        </div>
+                        <div>
+                            <div class="d-flex align-items-center gap-2 mb-1 flex-wrap">
+                                <h5 class="fw-bold mb-0 text-dark">@lesson.Name</h5>
+                                @if (isLessonCompleted)
+                                {
+                                    <span class="badge-status badge-completed">
+                                        <i class="bi bi-check-circle-fill"></i> Completed
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge-status badge-pending">
+                                        <i class="bi bi-circle"></i> In Progress
+                                    </span>
+                                }
+                            </div>
+                            @if (!string.IsNullOrEmpty(lesson.TextContent))
+                            {
+                                <p class="text-muted small mb-0 text-truncate" style="max-width: 580px;">
+                                    @lesson.TextContent
+                                </p>
+                            }
+                        </div>
+                    </div>
+
+                    <div>
+                        <a asp-controller="Lessons" asp-action="LessonPage" asp-route-Id="@lesson.Id" 
+                           class="btn @(isLessonCompleted ? "btn-outline-primary" : "btn-primary") w-100 text-nowrap">
+                            <i class="bi bi-play-fill me-1"></i> Open Lesson
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="card p-5 text-center shadow-sm">
+        <i class="bi bi-journal-text display-1 text-muted opacity-50 mb-3 d-block"></i>
+        <h4 class="fw-bold">No lessons uploaded yet</h4>
+        <p class="text-muted">The instructor is currently preparing lessons for this course.</p>
+    </div>
+}
+</html>

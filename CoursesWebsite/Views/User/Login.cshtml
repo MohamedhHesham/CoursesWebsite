@@ -1,0 +1,64 @@
+@model User
+
+@{
+    ViewData["Title"] = "Log In";
+}
+
+<div class="row justify-content-center my-4">
+    <div class="col-md-6 col-lg-5">
+        <div class="card shadow-sm border p-4 p-md-5">
+            <div class="text-center mb-4">
+                <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle text-primary mb-3" 
+                     style="width: 60px; height: 60px; font-size: 1.6rem;">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                </div>
+                <h3 class="fw-bold mb-1">Welcome Back</h3>
+                <p class="text-muted small">Sign in to your account to continue learning.</p>
+            </div>
+
+            <form asp-action="Login" asp-controller="User" method="post">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger small py-2 mb-3" role="alert"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email Address</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-end-0 text-muted">
+                            <i class="bi bi-envelope"></i>
+                        </span>
+                        <input type="email" asp-for="Email" class="form-control border-start-0 ps-0" 
+                               placeholder="you@example.com" required />
+                    </div>
+                    <span asp-validation-for="Email" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-end-0 text-muted">
+                            <i class="bi bi-lock"></i>
+                        </span>
+                        <input type="password" asp-for="Password" class="form-control border-start-0 ps-0" 
+                               placeholder="Enter your password" required />
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger small"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2 mb-3 fw-semibold shadow-sm">
+                    Log In <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+
+                <div class="text-center">
+                    <span class="text-muted small">Don't have an account yet?</span>
+                    <a asp-action="Register" asp-controller="User" class="fw-semibold text-primary small text-decoration-none ms-1">
+                        Register here
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+</html>

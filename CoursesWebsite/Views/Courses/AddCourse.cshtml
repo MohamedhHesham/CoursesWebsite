@@ -1,0 +1,79 @@
+@model Course
+
+@{
+    ViewData["Title"] = "Add New Course";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <!-- Navigation breadcrumb -->
+        <div class="mb-3">
+            <a asp-controller="Courses" asp-action="AdminPanel" class="text-decoration-none text-muted small">
+                <i class="bi bi-arrow-left me-1"></i> Back to Admin Panel
+            </a>
+        </div>
+
+        <div class="card shadow-sm border p-4 p-md-5">
+            <div class="d-flex align-items-center gap-2 mb-4">
+                <div class="feature-icon mb-0" style="width: 44px; height: 44px; font-size: 1.2rem;">
+                    <i class="bi bi-plus-circle"></i>
+                </div>
+                <div>
+                    <h3 class="fw-bold mb-0">Create New Course</h3>
+                    <p class="text-muted small mb-0">Provide basic information and an image thumbnail for your course.</p>
+                </div>
+            </div>
+
+            <form asp-controller="Courses" asp-action="AddCourse" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Course Title</label>
+                    <input type="text" asp-for="Name" class="form-control" placeholder="e.g. Full-Stack Web Development" />
+                    <span asp-validation-for="Name" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label">Description</label>
+                    <textarea asp-for="Description" class="form-control" rows="4" 
+                              placeholder="Describe what students will learn in this course..."></textarea>
+                    <span asp-validation-for="Description" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="Image" class="form-label">Course Thumbnail</label>
+                    <input type="file" asp-for="Image" accept=".png,.jpg,.jpeg,.webp" id="imageFileInput" 
+                           class="form-control" onchange="addImage()" />
+                    <span asp-validation-for="Image" class="text-danger small"></span>
+                    
+                    <div class="mt-3">
+                        <label class="form-label text-muted small">Thumbnail Preview</label>
+                        <div class="image-preview-container bg-light d-flex align-items-center justify-content-center">
+                            <img src="/Images/No_Image.png" id="courseImg" alt="Course Thumbnail Preview" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 justify-content-end pt-3 border-top">
+                    <a asp-controller="Courses" asp-action="AdminPanel" class="btn btn-outline-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-primary px-4">
+                        <i class="bi bi-check2 me-1"></i> Save Course
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function addImage() {
+            var fileInput = document.getElementById("imageFileInput");
+            if (fileInput.files && fileInput.files[0]) {
+                document.getElementById("courseImg").src = window.URL.createObjectURL(fileInput.files[0]);
+            }
+        }
+    </script>
+}
+}

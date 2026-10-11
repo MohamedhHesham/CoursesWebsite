@@ -1,0 +1,75 @@
+@model Lesson
+
+@{
+    ViewData["Title"] = "Lesson " + (Model.LessonNumber.HasValue ? Model.LessonNumber.ToString() : "") + " - " + Model.Name;
+}
+
+<div class="row justify-content-center my-2">
+    <div class="col-lg-10">
+        <!-- Top Navigation -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <a asp-controller="LearningProgress" asp-action="Index" asp-route-Id="@Model.CourseId" 
+               class="btn btn-sm btn-outline-secondary">
+                <i class="bi bi-arrow-left me-1"></i> Back to Curriculum
+            </a>
+            <span class="badge bg-light text-dark border px-3 py-2 rounded-pill">
+                <i class="bi bi-collection-play me-1 text-primary"></i> Course Player
+            </span>
+        </div>
+
+        <!-- Video Player Section -->
+        <div class="card shadow-sm border overflow-hidden mb-4 bg-dark">
+            @if (!string.IsNullOrEmpty(Model.VideoPath))
+            {
+                <div class="ratio ratio-16x9">
+                    <video src="@Model.VideoPath" controls controlsList="nodownload" class="w-100 h-100" style="background-color: #000;"></video>
+                </div>
+            }
+            else
+            {
+                <div class="p-5 text-center text-white my-5">
+                    <i class="bi bi-film display-2 opacity-50 mb-3 d-block"></i>
+                    <h4>Video player unavailable</h4>
+                    <p class="text-muted small">No video file was provided for this lesson.</p>
+                </div>
+            }
+        </div>
+
+        <!-- Lesson Header & Completion Action -->
+        <div class="card shadow-sm border p-4 p-md-5 mb-4 bg-white">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 pb-3 border-bottom mb-4">
+                <div>
+                    <span class="badge bg-primary text-white px-3 py-1 rounded-pill mb-2">
+                        Lesson @(Model.LessonNumber.HasValue ? Model.LessonNumber.ToString() : "")
+                    </span>
+                    <h2 class="fw-bold mb-0 text-dark">@Model.Name</h2>
+                </div>
+
+                <div>
+                    <form method="post" asp-controller="LearningProgress" asp-action="MarkAsCompleted">
+                        <input type="hidden" name="id" value="@Model.Id" />
+                        <button type="submit" class="btn btn-success btn-lg px-4 shadow-sm">
+                            <i class="bi bi-check2-circle me-1"></i> Mark as Completed
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Text Content / Lesson Notes -->
+            <div>
+                <h5 class="fw-bold mb-3"><i class="bi bi-file-text me-2 text-primary"></i>Lesson Notes & Content</h5>
+                @if (!string.IsNullOrEmpty(Model.TextContent))
+                {
+                    <div class="p-4 rounded-3 bg-light border text-secondary" style="white-space: pre-line; line-height: 1.8;">
+                        @Model.TextContent
+                    </div>
+                }
+                else
+                {
+                    <p class="text-muted fst-italic">No additional notes attached to this lesson.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+</html>
